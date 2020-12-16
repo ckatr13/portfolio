@@ -1,0 +1,568 @@
+/* Global Styles */
+
+html {
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(20, 20, 20);
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 850px) {
+    h1 {
+        font-size: 21px;
+        margin-top: 0px;
+    }
+}
+
+h2 {
+    font-family: 'Arial Black', 'Arial', 'sans-serif';
+    font-size: 32px;
+}
+
+@media screen and (min-width: 850px) {
+    h2 {
+        font-size: 28px;
+    }
+}
+
+h3 {
+    font-size: 24px;
+    font-family: 'Arial Black', 'Arial', 'sans-serif';
+}
+
+@media screen and (min-width: 850px) {
+    h3 {
+        font-size: 30px;
+    }
+}
+
+h4 {
+    font-size: 21px;
+    font-family: 'Arial Black', 'Arial', 'sans-serif';
+}
+
+h5 {
+    font-size: 18px;
+    color: #EFEFEF;
+    margin: 0px;
+}
+
+b {
+    color: #2A6482;
+}
+
+p {
+    line-height: 2em;
+}
+
+a {
+    transition: color 500ms ease-in-out;
+    cursor: pointer;
+}
+
+a:hover, a:focus {
+    color: #C67835;
+}
+
+img {
+    display: block;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.white-box, .blue-box, .black-box {
+    padding: 20px;
+}
+
+.white-box {
+    background-color: #EFEFEF;
+}
+
+.blue-box {
+    background-color: #2A6482;
+}
+
+.black-box {
+    background-color: rgb(20, 20, 20);
+}
+
+.button {
+    height: 16px;
+}
+
+g {
+    stroke: rgb(20, 20, 20);
+    transition: all 500ms ease-in-out;
+}
+
+.button:hover g {
+    stroke: #C67835;
+    transform: translateX(10px);
+}
+
+.container {
+    width: calc(100% - 40px);
+    height: max-content;
+}
+
+li {
+    line-height: 2em;
+}
+
+footer {
+    padding: 20px;
+    padding-bottom: 14px;
+    background-color: rgb(20, 20, 20);
+}
+
+/* Navigation Styles */
+
+nav {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0));
+    height: 60px;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo {
+    padding: 20px;
+    position: fixed;
+}
+
+.logo-img {
+    width: 68px;
+    transition: opacity 500ms ease-in-out;
+}
+
+.logo-img:hover, .logo-img:focus {
+    opacity: 1;
+}
+
+.hamburger-menu {
+    position: fixed;
+    color: #EFEFEF;
+    right: 0px;
+    padding: 20px 30px;
+    font-size: 2em;
+    line-height: 0.7em;
+}
+
+/* Home Page Header Styles */
+
+.headshot {
+    width: 78%;
+    z-index: -1;
+}
+
+@media screen and (min-width: 850px) {
+    .headshot {
+        width: auto;
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .headshot {
+        height: calc(100vh + 100px);
+    }
+}
+
+.top-box {
+    position: absolute;
+    height:  22px;
+    width: calc(25% - 42px);
+    left: calc(53% + 2px);
+    top: 0px;
+    z-index: 0;
+}
+
+@media screen and (min-width: 850px)  {
+    .top-box {
+        display: none;
+    }
+}
+
+.hello {
+    position: absolute;
+    width: 25%;
+    left: 53%;
+    top: 60px;
+}
+
+@media screen and (min-width: 850px)  {
+    .hello {
+        top: 0px;
+        height: 280px;
+        width: auto;
+        left: 49%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .hello {
+        left: 620px;
+    }
+}
+
+.top-box2 {
+    position: absolute;
+    top: 0px;
+    left: calc(49% + 254px);
+    height: 280px;
+    width: 90px;
+    display: none;
+}
+
+@media screen and (min-width: 850px)  {
+    .top-box2 {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .top-box2 {
+        left: calc(620px + 250px);
+        width: calc(40% - 250px);
+        background: #EFEFEF;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .page-intro {
+        position: absolute;
+        top: 268px;
+        left: 49%;
+        width: 344px;
+        padding-bottom: 0px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .page-intro {
+        left: 620px;
+        width: 40%;
+    }
+}
+
+/* Home Page Portfolio Styles */
+
+.portfolio {
+    height: max-content;
+    width: calc(100% - 20px);
+    padding: 20px;
+}
+
+@media screen and (min-width: 850px) {
+    .portfolio {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 100%;
+    }
+}
+
+.projects {
+    width: calc(100% - 20px);
+    display: grid;
+    justify-content: center;
+    grid-area: 1/1/1/1;
+}
+
+@media screen and (min-width: 850px) {
+    .projects {
+        background-color: rgb(20, 20, 20);
+        margin-top: -20px;
+        margin-left: -20px;
+        grid-row: 1/1;
+        width: calc(100% + 20px);
+    }
+}
+
+.proj-title-box {
+    width: 50%;
+    height: 30px;
+    float: right;
+    margin-right: -20px;
+}
+
+@media screen and (min-width: 850px) {
+    .proj-title-box {
+        width: 43%;
+        margin-top: 0px;
+    }
+}
+
+.white-proj-box {
+    width: calc(100% - 40px);
+    height: 100%;
+    z-index: -1;
+    display: none;
+    grid-area: 1/1/1/1;
+    margin-top: -40px;
+}
+
+.top-white-proj-box {
+    margin-top: -110px;
+    height: calc(100% + 70px);
+}
+
+.bottom-white-proj-box {
+    height: calc(100% + 40px)
+}
+
+@media screen and (min-width: 850px) {
+    .white-proj-box {
+        display: block;
+    }
+}
+
+.blue-proj-box {
+    height: calc(100% + 60px);
+    margin-top: -20px;
+    z-index: -1;
+    width: 100%;
+    padding: 0px;
+}
+
+.title {
+    margin-left: -22px;
+}
+
+@media screen and (min-width: 850px) {
+    .title {
+        margin-top: 17px;
+    }
+}
+
+.project-img, .skills-img {
+    width: 100%;
+}
+
+.project-img {
+    max-width: 400px;
+}
+
+@media screen and (min-width: 440px) {
+    .project-img {
+        min-width: 400px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .project-img {
+        grid-column: 2/2;
+        max-width: unset;
+        min-width: unset;
+        width: calc(100% - 80px)
+    }
+}
+
+.project, .top-img {
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 850px) {
+    .top-img {
+        margin-top: 0px;
+    }
+
+    .project {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        z-index: 2;
+        grid-template-rows: 100%;
+        width: 100%;
+        justify-items: center;
+        margin-top: 40px;
+    }
+}
+
+.proj-info, .project-info2 {
+    margin-top: 6px;
+    max-width: 360px;
+}
+
+@media screen and (min-width: 440px) {
+    .proj-info, .project-info2 {
+        min-width: 360px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .proj-info {
+        min-width: unset;
+        max-width: unset;
+        grid-area: 1/1/1/1;
+        padding: 0px;
+        margin-top: 0px;
+        padding-left: 60px;
+        padding-right: 60px;
+        width: calc(100% - 120px);
+    }
+}
+
+.proj-title {
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+
+.proj-desc {
+    line-height: normal;
+    margin-bottom: 0px;
+}
+
+/* Home Page Skills Styles */
+
+.skills {
+    margin-top: 30px;
+}
+
+.skills-title-box {
+    width: calc(25% - 40px);
+    height: 10px;
+    margin-top: 120px;
+}
+
+@media screen and (min-width: 850px) {
+    .skills-title-box {
+        display: none;
+    }
+}
+
+.skills-img {
+    margin-top: -170px;
+    position: absolute;
+    z-index: -1;
+}
+
+@media screen and (min-width: 850px) {
+    .skills-img {
+        width: 40%;
+        margin-top: 0px;
+        min-height: 366px;
+    }
+}
+
+.bar {
+    width: 100%;
+    height: 10px;
+    margin-top: -1px;
+}
+
+@media screen and (min-width: 850px) {
+    .bar {
+        display: none;
+    }
+}
+
+.skills-title {
+    margin-left: calc(25% - 2px);
+    margin-top: -76px;
+}
+
+@media screen and (min-width: 850px) {
+    .skills-title {
+        float: right;
+        margin-right: calc(45% - 78px);
+        margin-top: -32px;
+    }
+}
+
+.skills-white-box {
+    width: 25%;
+    margin-top: -11px;
+    display: none;
+}
+
+@media screen and (min-width: 850px) {
+    .skills-white-box {
+        display: block;
+    }
+}
+
+.skills-blue-box {
+    float: right;
+    height: 30px;
+    width: 45%;
+    margin-top: -40px;
+    display: none;
+}
+
+@media screen and (min-width: 850px) {
+    .skills-blue-box {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .skills-list {
+        margin-top: 70px;
+        width: 60%;
+        margin-left: 40%;
+        display: flex;
+    }
+}
+
+.skills-li-2 {
+    margin-top: -16px;
+}
+
+@media screen and (min-width: 850px) {
+    .skills-li-2 {
+        margin-top: 16px;
+    }
+}
+
+/* Footer Styles */
+
+.links {
+    color: gray;
+    display: block;
+}
+
+.footer-link:hover, .footer-link:focus {
+    color: #EFEFEF;
+}
+
+.link-ul {
+    padding-left: 0px;
+    padding-right: 20px;
+    margin-bottom: 0px;
+}
+
+.quick-link-container {
+    display: flex;
+}
+
+.copywrite {
+    float: right;
+    color: gray;
+    margin-top: -34px;
+}
+
+.social-icon {
+    width: 20px;
+    margin-top: 4px;
+    display: inline;
+}
+
+.social-hover {
+    margin-left: -25px;
+    transition: opacity 500ms ease-in-out;
+}
+
+.social-hover:hover {
+    opacity: 1;
+}
