@@ -79,6 +79,11 @@ img {
     display: block;
 }
 
+.lazy {
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+}
+
 .hide {
     opacity: 0;
 }
