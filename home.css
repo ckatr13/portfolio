@@ -17,7 +17,7 @@ h1 {
   font-weight: normal;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 950px) {
     h1 {
         font-size: 21px;
         margin-top: 0px;
@@ -29,7 +29,7 @@ h2 {
     font-size: 32px;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 950px) {
     h2 {
         font-size: 28px;
     }
@@ -167,7 +167,7 @@ nav {
     z-index: -1;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 950px) {
     .headshot {
         width: auto;
         height: 100vh;
@@ -189,7 +189,7 @@ nav {
     z-index: 0;
 }
 
-@media screen and (min-width: 850px)  {
+@media screen and (min-width: 950px)  {
     .top-box {
         display: none;
     }
@@ -202,7 +202,7 @@ nav {
     top: 60px;
 }
 
-@media screen and (min-width: 850px)  {
+@media screen and (min-width: 950px)  {
     .hello {
         top: 0px;
         height: 280px;
@@ -226,7 +226,7 @@ nav {
     display: none;
 }
 
-@media screen and (min-width: 850px)  {
+@media screen and (min-width: 950px)  {
     .top-box2 {
         display: block;
     }
@@ -240,7 +240,7 @@ nav {
     }
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 950px) {
     .page-intro {
         position: absolute;
         top: 268px;
@@ -265,7 +265,7 @@ nav {
     padding: 20px;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 950px) {
     .portfolio {
         display: grid;
         grid-template-columns: 80% 20%;
@@ -280,7 +280,7 @@ nav {
     grid-area: 1/1/1/1;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 950px) {
     .projects {
         background-color: rgb(20, 20, 20);
         margin-top: -20px;
@@ -297,7 +297,7 @@ nav {
     margin-right: -20px;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 950px) {
     .proj-title-box {
         width: 43%;
         margin-top: 0px;
@@ -322,7 +322,7 @@ nav {
     height: calc(100% + 40px)
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 950px) {
     .white-proj-box {
         display: block;
     }
@@ -360,7 +360,7 @@ nav {
     }
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 950px) {
     .project-img {
         grid-column: 2/2;
         max-width: unset;
@@ -373,7 +373,7 @@ nav {
     margin-top: 20px;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 950px) {
     .top-img {
         margin-top: 0px;
     }
@@ -400,7 +400,7 @@ nav {
     }
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 950px) {
     .proj-info {
         min-width: unset;
         max-width: unset;
