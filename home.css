@@ -171,6 +171,7 @@ nav {
     width: 78%;
     z-index: -1;
     opacity: 1;
+    height: unset;
 }
 
 @media screen and (min-width: 950px) {
