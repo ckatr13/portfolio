@@ -1,7 +1,6 @@
 function animateIn() {
     const e = document.getElementById("white-intro-tab");
-    const h = document.getElementById("hello");
-    const t = document.getElementById("top-box");
+    const m = ["hello", "top-box"];
     const a = ["wipe1", "wipe2", "wipe3", "wipe4", "wipe5", "wipe6"];
     const time = [400, 100, 500, 300, 200, 0];
 
@@ -28,11 +27,16 @@ function animateIn() {
                 e.style.transform = "unset";
             }
         }, 750);
-        
+
         setTimeout(function() {
             if (window.innerWidth < 950) {
-                h.style.transform = "translateY(0px)";
-                t.style.transform = "translateY(0px)";
+                function transform(el) {
+                    el.style.transform = "translateY(0px)";
+                }
+                for (let i = 0; i < a.length; i++) {
+                    m[i] = getElement(m[i]);
+                    transform(m[i])
+                }
             }
         }, 500);
     } 
