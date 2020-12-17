@@ -82,11 +82,11 @@ img {
     transition: opacity 500ms ease-in-out;
 }
 
-.hide {
+.simple-hide {
     opacity: 0 !important;
 }
 
-.hide-pop-in {
+.hide {
     transform: scaleY(0.7);
     transform-origin: center bottom;
     opacity: 0;
@@ -94,7 +94,7 @@ img {
     transform-style: preserve-3d;
 }
 
-.show-pop-in {
+.show {
     transform: scaleY(1);
     opacity: 1;
     transform-style: preserve-3d;
@@ -509,6 +509,18 @@ nav {
     margin-top: 30px;
 }
 
+.skills-header {
+    height: 200px;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 850px) {
+    .skills-header {
+        height: unset;
+        overflow: unset;
+    }
+}
+
 .skills-title-box {
     width: calc(25% - 40px);
     height: 10px;
@@ -525,6 +537,7 @@ nav {
     margin-top: -170px;
     position: absolute;
     z-index: -1;
+    max-height: 636px;
 }
 
 @media screen and (min-width: 850px) {
@@ -532,6 +545,7 @@ nav {
         width: 40%;
         margin-top: 0px;
         min-height: 366px;
+        max-height: unset;
     }
 }
 
@@ -600,13 +614,7 @@ nav {
 }
 
 .skills-li-2 {
-    margin-top: -16px;
-}
-
-@media screen and (min-width: 850px) {
-    .skills-li-2 {
-        margin-top: 16px;
-    }
+    margin-top: 16px;
 }
 
 /* Footer Styles */

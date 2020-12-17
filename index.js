@@ -8,6 +8,7 @@ function animateIn() {
       return  el = document.getElementById(el);
     }
 
+
     for (let i = 0; i < a.length; i++) {
         a[i] = getElement(a[i]);
         setTimeout(function() {a[i].style.transform = "translateX(-100%)";}, time[i])
@@ -57,11 +58,11 @@ function popIn() {
     const e = document.getElementsByClassName("pop-in");
     for (let i = 0; i < e.length; i++) {
         if (isElementInViewport(e[i])) {
-            e[i].classList.add("show-pop-in");
-            e[i].classList.remove("hide-pop-in");
+            e[i].classList.add("show");
+            e[i].classList.remove("hide");
         } else {
-            e[i].classList.add("hide-pop-in");
-            e[i].classList.remove("show-pop-in")
+            e[i].classList.add("hide");
+            e[i].classList.remove("show")
         };
     }
     scroll(popIn);
