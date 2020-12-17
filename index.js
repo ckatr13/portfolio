@@ -1,50 +1,72 @@
 function animateIn() {
     const e = document.getElementById("white-intro-tab");
-    const w1 = document.getElementById("wipe1");
-    const w2 = document.getElementById("wipe2");
-    const w3 = document.getElementById("wipe3");
-    const w4 = document.getElementById("wipe4");
-    const w5 = document.getElementById("wipe5");
-    const w6 = document.getElementById("wipe6");
-    const transform = "translateX(-100%)";
-    
-    setTimeout(function() {
-        w1.style.transform = transform;
-    }, 400);
-    setTimeout(function() {
-        w2.style.transform = transform;
-    }, 100);
-    setTimeout(function() {
-        w3.style.transform = transform;
-    }, 500);
-    setTimeout(function() {
-        w4.style.transform = transform;
-    }, 300);
-    setTimeout(function() {
-        w5.style.transform = transform;
-    }, 200);
-    setTimeout(function() {
-        w6.style.transform = transform;
-    }, 0);
-
-    setTimeout(function() {
-        if (window.innerWidth >= 1100) {
-            e.style.transform = "translateY(-808px)";
-        } else if (window.innerWidth >= 950 && window.innerWidth < 1100) {
-            e.style.transform = "translateY(-708px)";
-        } else {
-            e.style.transform = "unset";
-        }
-    }, 750);
-}
-
-function animateInMobile() {
-    const e = document.getElementById("hello");
+    const h = document.getElementById("hello");
     const t = document.getElementById("top-box");
-    setTimeout(function() {
-        if (window.innerWidth < 950) {
-            e.style.transform = "translateY(0px)";
-            t.style.transform = "translateY(0px)";
-        }
-    }, 500);
+    const a = ["wipe1", "wipe2", "wipe3", "wipe4", "wipe5", "wipe6"];
+    const time = [400, 100, 500, 300, 200, 0];
+
+    function getElement(el) {
+      return  el = document.getElementById(el);
+    }
+
+    function transform(el) {
+        el.style.transform = "translateX(-100%)";
+    }
+
+    for (let i = 0; i < a.length; i++) {
+        a[i] = getElement(a[i]);
+        setTimeout(function() {transform(a[i])}, time[i])
+    }
+
+    if(e) {
+        setTimeout(function() {
+            if (window.innerWidth >= 1100) {
+                e.style.transform = "translateY(-808px)";
+            } else if (window.innerWidth >= 950 && window.innerWidth < 1100) {
+                e.style.transform = "translateY(-708px)";
+            } else {
+                e.style.transform = "unset";
+            }
+        }, 750);
+        
+        setTimeout(function() {
+            if (window.innerWidth < 950) {
+                h.style.transform = "translateY(0px)";
+                t.style.transform = "translateY(0px)";
+            }
+        }, 500);
+    } 
 }
+
+function isElementInViewport(el) {
+      var rect = el.getBoundingClientRect()
+      return (
+        (rect.top <= 0
+          && rect.bottom >= 0)
+        ||
+        (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+        ||
+        (rect.top >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+      );
+    };
+
+var scroll = window.requestAnimationFrame ||
+    // IE Fallback
+function(callback){ window.setTimeout(callback, 1000/60)};
+    
+function popIn() {
+    const e = document.getElementsByClassName("pop-in");
+    for (let i = 0; i < e.length; i++) {
+        if (isElementInViewport(e[i])) {
+            e[i].classList.add("show-pop-in");
+            e[i].classList.remove("hide-pop-in");
+        } else {
+            e[i].classList.add("hide-pop-in");
+            e[i].classList.remove("show-pop-in")
+        };
+    }
+    scroll(popIn);
+};
+

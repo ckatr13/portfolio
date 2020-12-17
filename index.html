@@ -77,7 +77,7 @@
                 <section class="project">
                     <img class="project-img top-img lazy" data-src="media/designhub.png" alt="future project description">
                     <div class="white-box white-proj-box top-white-proj-box"></div>
-                    <div class="white-box container proj-info">
+                    <div class="white-box container proj-info pop-in hide-pop-in" id="proj1">
                         <h4 class="proj-title">Designhub Broadcast Design and Branding Agency</h4>
                         <p class="proj-desc">UX Design: Adobe Photoshop, Sketch2<br>
                             <br>Front End Development: HTML, CSS, Javascript, Visual Studio Code</p>
@@ -94,7 +94,7 @@
                 <section class="project">
                     <img class="project-img lazy" data-src="media/ravenous.png" alt="future project description">
                     <div class="white-box white-proj-box"></div>
-                    <div class="white-box container proj-info" id="proj-2">
+                    <div class="white-box container proj-info pop-in hide-pop-in" id="proj-2">
                         <h4 class="proj-title">Restaurant Search App</h4>
                         <p class="proj-desc">UX Design: Adobe Photoshop, Sketch2<br>
                             <br>Front End Development: HTML, CSS, Javascript, 
@@ -112,7 +112,7 @@
                 <section class="project">
                     <img class="project-img lazy" data-src="media/ravenous.png" alt="future project description">
                     <div class="white-box white-proj-box"></div>
-                    <div class="white-box container proj-info" id="proj-3">
+                    <div class="white-box container proj-info pop-in hide-pop-in" id="proj-3">
                         <h4 class="proj-title">Restaurant Search App</h4>
                         <p class="proj-desc">UX Design: Adobe Photoshop, Sketch2<br>
                             <br>Front End Development: HTML, CSS, Javascript, 
@@ -130,7 +130,7 @@
                 <section class="project">
                     <img class="project-img lazy" data-src="media/ravenous.png" alt="future project description">
                     <div class="white-box white-proj-box"></div>
-                    <div class="white-box container proj-info" id="proj-4">
+                    <div class="white-box container proj-info pop-in hide-pop-in" id="proj-4">
                         <h4 class="proj-title">Restaurant Search App</h4>
                         <p class="proj-desc">UX Design: Adobe Photoshop, Sketch2<br>
                             <br>Front End Development: HTML, CSS, Javascript, 
@@ -148,7 +148,7 @@
                 <section class="project">
                     <img class="project-img lazy" data-src="media/ravenous.png" alt="future project description">
                     <div class="white-box white-proj-box"></div>
-                    <div class="white-box container proj-info" id="proj-5">
+                    <div class="white-box container proj-info pop-in hide-pop-in" id="proj-5">
                         <h4 class="proj-title">Restaurant Search App</h4>
                         <p class="proj-desc">UX Design: Adobe Photoshop, Sketch2<br>
                             <br>Front End Development: HTML, CSS, Javascript, 
@@ -166,7 +166,7 @@
                 <section class="project">
                     <img class="project-img lazy" data-src="media/ravenous.png" alt="future project description">
                     <div class="white-box white-proj-box bottom-white-proj-box"></div>
-                    <div class="white-box container proj-info" id="proj-6">
+                    <div class="white-box container proj-info pop-in hide-pop-in" id="proj-6">
                         <h4 class="proj-title">Restaurant Search App</h4>
                         <p class="proj-desc">UX Design: Adobe Photoshop, Sketch2<br>
                             <br>Front End Development: HTML, CSS, Javascript, 
@@ -193,24 +193,26 @@
                 <img class="skills-img lazy" data-src="media/computers.png" alt="">
             </header>
             <section class="white-box container skills-list">
-                <ul>
-                    <li>Front-End Web Development</li>
-                    <li>Web Design</li>
-                    <li>UX Design</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>SCSS</li>
-                    <li>SASS</li>
-                </ul>
-                <ul class="skills-li-2">
-                    <li>Javascript</li>
-                    <li>React.js</li>
-                    <li>Visual Studio Code</li>
-                    <li>Adobe Photoshop</li>
-                    <li>Adobe XD</li>
-                    <li>Adobe Creative Cloud</li>
-                    <li>Sketch2</li>
-                </ul>
+                <div class="pop-in hide-pop-in" id="skills">
+                    <ul>
+                        <li>Front-End Web Development</li>
+                        <li>Web Design</li>
+                        <li>UX Design</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>SCSS</li>
+                        <li>SASS</li>
+                    </ul>
+                    <ul class="skills-li-2">
+                        <li>Javascript</li>
+                        <li>React.js</li>
+                        <li>Visual Studio Code</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe XD</li>
+                        <li>Adobe Creative Cloud</li>
+                        <li>Sketch2</li>
+                    </ul>
+                </div>
             </section>
         </article>
         <footer class="container">
@@ -252,9 +254,8 @@
           });
 
           window.addEventListener("load", animateIn);
-          window.addEventListener("load", animateInMobile);
           window.addEventListener("resize", animateIn);
-          window.addEventListener("resize", animateInMobile);
+          window.addEventListener("scroll", popIn);
         </script>
     </body>
 </html>
