@@ -8,13 +8,9 @@ function animateIn() {
       return  el = document.getElementById(el);
     }
 
-    function transform(el) {
-        el.style.transform = "translateX(-100%)";
-    }
-
     for (let i = 0; i < a.length; i++) {
         a[i] = getElement(a[i]);
-        setTimeout(function() {transform(a[i])}, time[i])
+        setTimeout(function() {a[i].style.transform = "translateX(-100%)";}, time[i])
     }
 
     if(e) {
@@ -30,12 +26,9 @@ function animateIn() {
 
         setTimeout(function() {
             if (window.innerWidth < 950) {
-                function transform(el) {
-                    el.style.transform = "translateY(0px)";
-                }
-                for (let i = 0; i < a.length; i++) {
+                for (let i = 0; i < m.length; i++) {
                     m[i] = getElement(m[i]);
-                    transform(m[i])
+                    m[i].style.transform = "translateY(0px)";
                 }
             }
         }, 500);
