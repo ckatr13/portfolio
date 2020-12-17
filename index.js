@@ -1,5 +1,6 @@
 function animateIn() {
     const e = document.getElementById("white-intro-tab");
+    const img = document.getElementById("headshot");
     const m = ["hello", "top-box"];
     const a = ["wipe1", "wipe2", "wipe3", "wipe4", "wipe5", "wipe6"];
     const time = [400, 100, 500, 300, 200, 0];
@@ -26,6 +27,7 @@ function animateIn() {
         }, 750);
 
         setTimeout(function() {
+            img.classList.remove("simple-hide");
             if (window.innerWidth < 950) {
                 for (let i = 0; i < m.length; i++) {
                     m[i] = getElement(m[i]);
