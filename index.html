@@ -47,18 +47,26 @@
 
         <header>
             <div class="chris-img-container">
+                <div id="wipe1"></div>
+                <div id="wipe2"></div>
+                <div id="wipe3"></div>
+                <div id="wipe4"></div>
+                <div id="wipe5"></div>
+                <div id="wipe6"></div>
                 <img src="media/chris-photo.jpg" class="headshot" alt="Christina Cruder">
             </div>
-            <div class="white-box top-box"></div>
-            <div class="white-box top-box2"></div>
-            <img src="media/hello.png" class="hello" alt="hello">
-            <div class="white-box container page-intro">
-                <h1>My name is Christina Cruder</h1>
-                <h2>UX Design <b>&</b><br>Web Development</h2>
-                <p>I am a full stack web developer and UX designer. I have a passion 
-                    for building attractive and functional user experiences. I enjoy 
-                    working on projects from the initial design process all the way 
-                    to building clean, elegant and efficiant code.</p>
+            <div id="white-intro-tab">
+                <div class="white-box top-box" id="top-box"></div>
+                <div class="white-box top-box2"></div>
+                <img src="media/hello.png" class="hello" id="hello" alt="hello">
+                <div class="white-box container page-intro">
+                    <h1>My name is Christina Cruder</h1>
+                    <h2>UX Design <b>&</b><br>Web Development</h2>
+                    <p>I am a full stack web developer and UX designer. I have a passion 
+                        for building attractive and functional user experiences. I enjoy 
+                        working on projects from the initial design process all the way 
+                        to building clean, elegant and efficiant code.</p>
+                </div>
             </div>
         </header>
         <header class="blue-box proj-title-box">
@@ -231,7 +239,7 @@
         <script src="node_modules/yall-js/dist/yall.min.js"></script>
         <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
         <script>
-                      document.addEventListener("DOMContentLoaded", function () {
+             document.addEventListener("DOMContentLoaded", function () {
             yall({
               events: {
                 load: function (event) {
@@ -242,6 +250,11 @@
               }
             });
           });
+
+          window.addEventListener("load", animateIn);
+          window.addEventListener("load", animateInMobile);
+          window.addEventListener("resize", animateIn);
+          window.addEventListener("resize", animateInMobile);
         </script>
     </body>
 </html>

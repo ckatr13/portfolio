@@ -193,6 +193,49 @@ nav {
     background: linear-gradient(to bottom, rgba(20, 20, 20), rgb(51, 51, 51));
 }
 
+#wipe1, #wipe2, #wipe3, #wipe4, #wipe5, #wipe6 {
+    width: 100%;
+    height: 16.6666667vh;
+    position: absolute;
+    z-index: 2;
+    transition: transform 400ms ease-in-out;
+    background-color: #EFEFEF;
+}
+
+@media screen and (min-width: 950px) {
+    #wipe1, #wipe2, #wipe3, #wipe4, #wipe5, #wipe6 {
+        transition: transform 750ms ease-in-out;
+    }
+}
+
+#wipe2 {
+    top: 16.6666667vh;
+}
+
+#wipe3 {
+    top: 33.3333333vh;
+}
+
+#wipe4 {
+    top: calc(50vh - 1px);
+}
+
+#wipe5 {
+    top: calc(66.6666667vh - 1px);
+}
+
+#wipe6 {
+    top: calc(83.3333334vh - 1px);
+    height: calc(16.6666667vh + 1px);
+}
+
+@media screen and (min-width: 950px) {
+    #white-intro-tab {
+        transform: translateY(-1500px);
+        transition: transform 750ms ease-in-out;
+    }
+}
+
 .top-box {
     position: absolute;
     height:  22px;
@@ -200,11 +243,14 @@ nav {
     left: calc(53% + 2px);
     top: 0px;
     z-index: 0;
+    transform: translateY(-350px);
+    transition: transform 750ms ease-in-out;
 }
 
 @media screen and (min-width: 950px)  {
     .top-box {
         display: none;
+        transform: unset;
     }
 }
 
@@ -214,6 +260,8 @@ nav {
     left: 53%;
     top: 60px;
     opacity: 1;
+    transform: translateY(-350px);
+    transition: transform 750ms ease-in-out;
 }
 
 @media screen and (min-width: 950px)  {
@@ -222,6 +270,7 @@ nav {
         height: 280px;
         width: auto;
         left: 49%;
+        transform: unset;
     }
 }
 
