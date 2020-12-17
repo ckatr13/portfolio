@@ -77,15 +77,12 @@ a:hover, a:focus {
 
 img {
     display: block;
-}
-
-.lazy {
     opacity: 0;
     transition: opacity 500ms ease-in-out;
 }
 
 .hide {
-    opacity: 0;
+    opacity: 0 !important;
 }
 
 .white-box, .blue-box, .black-box {
@@ -151,10 +148,11 @@ nav {
 .logo-img {
     width: 68px;
     transition: opacity 500ms ease-in-out;
+    opacity: 1;
 }
 
 .logo-img:hover, .logo-img:focus {
-    opacity: 1;
+    opacity: 1 !important;
 }
 
 .hamburger-menu {
@@ -171,6 +169,7 @@ nav {
 .headshot {
     width: 78%;
     z-index: -1;
+    opacity: 1;
 }
 
 @media screen and (min-width: 950px) {
@@ -206,6 +205,7 @@ nav {
     width: 25%;
     left: 53%;
     top: 60px;
+    opacity: 1;
 }
 
 @media screen and (min-width: 950px)  {
