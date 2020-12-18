@@ -147,12 +147,6 @@ li {
     line-height: 2em;
 }
 
-footer {
-    padding: 20px;
-    padding-bottom: 14px;
-    background-color: rgb(20, 20, 20);
-}
-
 /* Navigation Styles */
 
 nav {
@@ -192,7 +186,6 @@ nav {
 .headshot {
     width: 78%;
     z-index: -1;
-    opacity: 1;
     height: unset;
 }
 
@@ -491,10 +484,7 @@ nav {
         max-width: unset;
         grid-area: 1/1/1/1;
         margin-top: 0px;
-        padding-top: 0px;
-        padding-left: 60px;
-        padding-right: 60px;
-        padding-bottom: 0px;
+        padding: 0px 60px;
         width: calc(100% - 120px);
     }
 }
@@ -625,6 +615,12 @@ nav {
 
 /* Footer Styles */
 
+footer {
+    padding: 20px;
+    padding-bottom: 14px;
+    background-color: rgb(20, 20, 20);
+}
+
 .links {
     color: gray;
     display: block;
@@ -663,4 +659,39 @@ nav {
 
 .social-hover:hover {
     opacity: 1 !important;
+}
+
+/* Contact Page Styles  */
+
+.header {
+    height: 130px;
+}
+
+.contact-header {
+    height: 90px;
+    /* width: 80%; */
+    width: calc(100% - 40px);
+    float: right;
+}
+
+.contact-title {
+    /* font-size: 48px; */
+    /* margin-top: 57px; */
+    margin-left: -22px;
+    margin-top: 84px;
+}
+
+input, textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    background-color: #D8D8D8;
+    border: gray solid 1px;
+}
+
+.label {
+    margin: 0px;
+}
+
+#message {
+    height: 120px;
 }

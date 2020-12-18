@@ -9,7 +9,6 @@ function animateIn() {
       return  el = document.getElementById(el);
     }
 
-
     for (let i = 0; i < a.length; i++) {
         a[i] = getElement(a[i]);
         setTimeout(function() {a[i].style.transform = "translateX(-100%)";}, time[i])
@@ -27,7 +26,7 @@ function animateIn() {
         }, 750);
 
         setTimeout(function() {
-            img.classList.remove("simple-hide");
+            img.style.opacity = "1";
             if (window.innerWidth < 950) {
                 for (let i = 0; i < m.length; i++) {
                     m[i] = getElement(m[i]);
@@ -70,3 +69,7 @@ function popIn() {
     scroll(popIn);
 };
 
+// var frmvalidator = new Validator(“contactform”); 
+// frmvalidator.addValidation(“name”,”req”,”Please provide your name”); 
+// frmvalidator.addValidation(“email”,”req”,”Please provide your email”); 
+// frmvalidator.addValidation(“email”,”email”, “Please enter a valid email address”);
