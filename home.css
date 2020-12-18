@@ -695,3 +695,8 @@ input, textarea {
 #message {
     height: 120px;
 }
+
+.g-recaptcha {
+    height: 80px;
+    width: 200px;
+}

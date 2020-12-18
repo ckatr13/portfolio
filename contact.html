@@ -51,15 +51,15 @@
             </div>
         </header>
 
-        <form class="white-box container" method=”post” name=”contact_form” action="contact.php">
+        <form class="white-box container" method=POST name=contact_form action="https://formspree.io/f/myybbgwv">
             <label for="name"><p class="label">Name</p></label>
             <input id="name" type="text" placeholder="Name" name="name"><br><br>
             <label for="email"><p class="label">Email Address</p></label>
-            <input id="email" type="email" placeholder="Email Address" name="email" required><br><br>
+            <input id="email" type="email" placeholder="Email Address" name="_replyto" required><br><br>
             <label for="message"><p class="label">Message</p></label>
-            <textarea id="message" type="text" placeholder="Message" name=”message” required></textarea><br><br>
-                    
-            <button class="submit-button" type="submit">Login</button>
+            <textarea id="message" type="text" placeholder="Message" name=body required></textarea><br><br>
+            <!-- <div class="g-recaptcha" data-sitekey="6LcJDgwaAAAAANbXXQzAq6Y7wCwcmj6kl39ozlVB"></div>      -->
+            <button class="submit-button" type="submit" value="Send">Send</button>
         </form>
 
 
