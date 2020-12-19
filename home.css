@@ -669,16 +669,52 @@ footer {
 
 .contact-header {
     height: 90px;
-    /* width: 80%; */
     width: calc(100% - 40px);
     float: right;
 }
 
+@media screen and (min-width: 850px) {
+    .contact-header {
+        width: 80%;
+    }
+}
+
 .contact-title {
-    /* font-size: 48px; */
-    /* margin-top: 57px; */
     margin-left: -22px;
     margin-top: 84px;
+}
+
+@media screen and (min-width: 850px) {
+    .contact-title {
+        font-size: 48px;
+        margin-top: 57px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .contact-article {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.contact {
+    width: calc(100% - 40px);
+    padding: 40px 20px;
+    max-width: 900px;
+}
+
+@media screen and (min-width: 850px) {
+    .contact {
+        display: flex;
+        height: max-content;
+        background-color: #EFEFEF;
+        width: 80%;
+        padding: 0px;
+        margin-top: 60px;
+    }
 }
 
 input, textarea {
@@ -696,7 +732,50 @@ input, textarea {
     height: 120px;
 }
 
-.g-recaptcha {
+.button-container {
+    width: 100%;
+    display: grid;
+    justify-items: right;
+}
+
+.submit {
+    background-color: #2A6482;
+    padding: 12px 20px;
+    color: #EFEFEF;
+    border: none;
+    transition: background-color 500ms ease-in-out;
+}   
+
+.submit:hover, .submit:focus {
+    background-color: #C67835;
+}
+
+.LI-profile-badge {
+    display: grid;
+    justify-items: center;
+    padding: 40px 20px;
+}
+
+.contact-footer {
     height: 80px;
-    width: 200px;
+}
+
+@media screen and (min-width: 850px) {
+    .contact-footer {
+        margin-top: 0px;
+    }
+}
+
+.contact-element {
+    margin-top: -200px;
+    height: 160px;
+    width: 50%;
+    float: right;
+    display: none;
+}
+
+@media screen and (min-width: 850px) {
+    .contact-element {
+        display: block;
+    }
 }
