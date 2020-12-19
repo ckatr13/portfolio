@@ -16,10 +16,8 @@ function animateIn() {
 
     if(e) {
         setTimeout(function() {
-            if (window.innerWidth >= 1100) {
-                e.style.transform = "translateY(-808px)";
-            } else if (window.innerWidth >= 950 && window.innerWidth < 1100) {
-                e.style.transform = "translateY(-708px)";
+            if (window.innerWidth >= 950) {
+                e.style.transform = "translateY(0px)";
             } else {
                 e.style.transform = "unset";
             }

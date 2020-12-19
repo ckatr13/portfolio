@@ -293,8 +293,18 @@ nav {
 
 @media screen and (min-width: 950px) {
     #white-intro-tab {
-        transform: translateY(-1500px);
+        position: absolute;
+        top: 0px;
+        left: 54%;
+        transform: translateY(-220%);
         transition: transform 750ms ease-in-out;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    #white-intro-tab {
+        left: 680px;
+        width: 36%;
     }
 }
 
@@ -328,24 +338,25 @@ nav {
 
 @media screen and (min-width: 950px)  {
     .hello {
-        top: 0px;
+        position: relative;
+        top: unset;
         height: 280px;
         width: auto;
-        left: 49%;
+        left: unset;
         transform: unset;
     }
 }
 
-@media screen and (min-width: 1100px) {
+/* @media screen and (min-width: 1100px) {
     .hello {
         left: 660px;
     }
-}
+} */
 
 .top-box2 {
     position: absolute;
     top: 0px;
-    left: calc(49% + 254px);
+    left: 254px;
     height: 280px;
     width: 90px;
     display: none;
@@ -359,8 +370,9 @@ nav {
 
 @media screen and (min-width: 1100px) {
     .top-box2 {
-        left: calc(660px + 250px);
-        width: calc(36% - 250px);
+        /* left: calc(660px + 250px); */
+        width: calc(100% - 294px);
+        height: 240px;
         background: #EFEFEF;
     }
 }
@@ -369,7 +381,7 @@ nav {
     .page-intro {
         position: absolute;
         top: 268px;
-        left: 49%;
+        /* left: 49%; */
         width: 344px;
         padding-bottom: 0px;
     }
@@ -377,8 +389,8 @@ nav {
 
 @media screen and (min-width: 1100px) {
     .page-intro {
-        left: 660px;
-        width: 36%;
+        /* left: 660px; */
+        width: calc(100% - 40px);
     }
 }
 
@@ -796,7 +808,7 @@ input, textarea {
 .submit {
     background-color: #3680A7;
     padding: 12px 20px;
-    color: white;
+    color: #EFEFEF;
     border: none;
     transition: background-color 500ms ease-in-out;
 }   
