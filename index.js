@@ -69,7 +69,10 @@ function popIn() {
     scroll(popIn);
 };
 
-// var frmvalidator = new Validator(“contactform”); 
-// frmvalidator.addValidation(“name”,”req”,”Please provide your name”); 
-// frmvalidator.addValidation(“email”,”req”,”Please provide your email”); 
-// frmvalidator.addValidation(“email”,”email”, “Please enter a valid email address”);
+function showMenu() {
+    document.getElementById("menu").style.transform = "translateX(0px)";
+}
+
+function hideMenu() {
+    document.getElementById("menu").style.transform = "translateX(calc(100% + 40px))";
+}

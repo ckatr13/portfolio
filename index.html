@@ -40,9 +40,29 @@
 
     <body>
         <nav>
-            <a href="index.html" class="logo"><img class="logo-img" id="#top-social" src="media/chris-logo-white.png" alt="Christina's Logo"></a>
+            <a href="index.html" class="logo"><img class="logo-img" src="media/chris-logo-white.png" alt="Christina's Logo"></a>
             <a href="index.html" class="logo"><img class="logo-img simple-hide" src="media/chris-logo-gold.png" alt="Christina's Logo"></a>
-            <a class="hamburger-menu">&#9776;</a>
+            <div class="hamburger-menu" onclick="showMenu()">&#9776;</div>
+            <div class='black-box nav-menu' id="menu">
+                <ul class="menu">
+                    <div class="x" onclick="hideMenu()">X</div>
+                    <li class="links"><a class="links" href="index.html">Home</a></li>
+                    <li class="links"><a class="links" onclick="hideMenu()" href="index.html#portfolio">Portfolio</a></li>
+                    <li class="links"><a class="links" onclick="hideMenu()" href="#skills">Skills</a></li>
+                    <li class="links"><a class="links">About Me</a></li>
+                    <li class="links"><a class="links" href="contact.html">Contact</a></li>
+                    <li class="links">
+                        <a href="https://www.linkedin.com/in/christina-cruder-04a16534">
+                            <img class="social-icon-menu lazy" data-src="media/linkedin grey.png" alt="linkedIn Logo">
+                            <img class="social-icon-menu social-hover-menu simple-hide no-fade lazy" data-src="media/linkedin.png" alt="linkedIn Logo">
+                        </a>
+                        <a href="https://github.com/ckatr13">
+                            <img class="social-icon-menu lazy" data-src="media/github.png" alt="Github Logo">
+                            <img class="social-icon-menu social-hover-menu simple-hide no-fade lazy" data-src="media/github-blue.png" alt="Github Logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
         <header>
@@ -190,10 +210,10 @@
                 <div class="black-box skills-title-box"></div>
                 <div class="black-box bar"></div>
                 <h3 class="skills-title">SKILLS</h3>
-                <img class="skills-img lazy" data-src="media/computers.png" alt="">
+                <img class="skills-img pop-in hide lazy" data-src="media/computers.png" alt="">
             </header>
-            <section class="white-box container skills-list">
-                <div class="pop-in hide" id="skills">
+            <section class="white-box container skills-list pop-in hide ">
+                <div id="skills">
                     <ul>
                         <li>Front-End Web Development</li>
                         <li>Web Design</li>
@@ -219,19 +239,22 @@
             <h4 class="footer-heading">QUICK LINKS</h4>
             <div class="quick-link-container">
                 <ul class="link-ul">
-                    <li class="links"><a class="footer-link" href="index.html">Home</a></li>
-                    <li class="links"><a class="footer-link" href="#skills">Skills</a></li>
-                    <li class="links"><a class="footer-link">About Me</a></li>
+                    <li class="links"><a class="links" href="index.html">Home</a></li>
+                    <li class="links"><a class="links" href="#skills">Skills</a></li>
+                    <li class="links"><a class="links">About Me</a></li>
                 </ul>
                 <ul class="link-ul">
-                    <li class="links"><a class="footer-link" href="#portfolio">Portfolio</a></li>
-                    <li class="links"><a class="footer-link" href="contact.html">Contact</a></li>
+                    <li class="links"><a class="links" href="#portfolio">Portfolio</a></li>
+                    <li class="links"><a class="links" href="contact.html">Contact</a></li>
                     <li class="links">
                         <a href="https://www.linkedin.com/in/christina-cruder-04a16534">
                             <img class="social-icon lazy" data-src="media/linkedin grey.png" alt="linkedIn Logo">
                             <img class="social-icon social-hover simple-hide no-fade lazy" data-src="media/linkedin.png" alt="linkedIn Logo">
                         </a>
-                        <a href="https://github.com/ckatr13"><img class="social-icon lazy" data-src="media/github.png" alt="Github Logo"></a>
+                        <a href="https://github.com/ckatr13">
+                            <img class="social-icon lazy" data-src="media/github.png" alt="Github Logo">
+                            <img class="social-icon social-hover simple-hide no-fade lazy" data-src="media/github-blue.png" alt="Github Logo">
+                        </a>
                     </li>
                 </ul>
             </div>

@@ -39,10 +39,39 @@
     </head>
 
     <body>
+        <div class="chris-img-container">
+            <div id="wipe1"></div>
+            <div id="wipe2"></div>
+            <div id="wipe3"></div>
+            <div id="wipe4"></div>
+            <div id="wipe5"></div>
+            <div id="wipe6"></div>
+        </div>
+
         <nav>
-            <a href="index.html" class="logo"><img class="logo-img" id="#top-social" src="media/chris-logo-white.png" alt="Christina's Logo"></a>
+            <a href="index.html" class="logo"><img class="logo-img" src="media/chris-logo-white.png" alt="Christina's Logo"></a>
             <a href="index.html" class="logo"><img class="logo-img simple-hide" src="media/chris-logo-gold.png" alt="Christina's Logo"></a>
-            <a class="hamburger-menu">&#9776;</a>
+            <a class="hamburger-menu" onclick="showMenu()">&#9776;</a>
+            <div class='black-box nav-menu' id="menu">
+                <ul class="menu">
+                    <div class="x" onclick="hideMenu()">X</div>
+                    <li class="links"><a class="links" href="index.html">Home</a></li>
+                    <li class="links"><a class="links" onclick="hideMenu()" href="index.html#portfolio">Portfolio</a></li>
+                    <li class="links"><a class="links" onclick="hideMenu()" href="index.html#skills">Skills</a></li>
+                    <li class="links"><a class="links">About Me</a></li>
+                    <li class="links"><a class="links" href="contact.html">Contact</a></li>
+                    <li class="links">
+                        <a href="https://www.linkedin.com/in/christina-cruder-04a16534">
+                            <img class="social-icon-menu lazy" data-src="media/linkedin grey.png" alt="linkedIn Logo">
+                            <img class="social-icon-menu social-hover-menu simple-hide no-fade lazy" data-src="media/linkedin.png" alt="linkedIn Logo">
+                        </a>
+                        <a href="https://github.com/ckatr13">
+                            <img class="social-icon-menu lazy" data-src="media/github.png" alt="Github Logo">
+                            <img class="social-icon-menu social-hover-menu simple-hide no-fade lazy" data-src="media/github-blue.png" alt="Github Logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
         <header class="header">
@@ -61,9 +90,12 @@
                     <div class="contact-me social-links">
                         <a href="https://www.linkedin.com/in/christina-cruder-04a16534">
                             <img class="social-icon-contact lazy" data-src="media/linkedin grey.png" alt="linkedIn Logo">
-                            <img class="social-icon-contact social-hover-contact simple-hide no-fade lazy" data-src="media/linkedin-black.png" alt="linkedIn Logo">
+                            <img class="social-icon-contact social-hover-contact simple-hide no-fade lazy" data-src="media/linkedin-blue.png" alt="linkedIn Logo">
                         </a>
-                        <a href="https://github.com/ckatr13"><img class="social-icon-contact lazy" data-src="media/github.png" alt="Github Logo"></a>
+                        <a href="https://github.com/ckatr13">
+                            <img class="social-icon-contact lazy" data-src="media/github.png" alt="Github Logo">
+                            <img class="social-icon-contact social-hover-contact2 simple-hide no-fade lazy" data-src="media/github-blue.png" alt="Github Logo">
+                        </a>
                     </div>
                 </section>
                 <form class="white-box" method=POST name=contact_form action="https://formspree.io/f/myybbgwv">
@@ -89,19 +121,22 @@
             <h4 class="footer-heading">QUICK LINKS</h4>
             <div class="quick-link-container">
                 <ul class="link-ul">
-                    <li class="links"><a class="footer-link" href="index.html">Home</a></li>
-                    <li class="links"><a class="footer-link" href="index.html#skills">Skills</a></li>
-                    <li class="links"><a class="footer-link">About Me</a></li>
+                    <li class="links"><a class="links" href="index.html">Home</a></li>
+                    <li class="links"><a class="links" href="index.html#skills">Skills</a></li>
+                    <li class="links"><a class="links">About Me</a></li>
                 </ul>
                 <ul class="link-ul">
-                    <li class="links"><a class="footer-link" href="index.html#portfolio">Portfolio</a></li>
-                    <li class="links"><a class="footer-link" href="contact.html">Contact</a></li>
+                    <li class="links"><a class="links" href="index.html#portfolio">Portfolio</a></li>
+                    <li class="links"><a class="links" href="contact.html">Contact</a></li>
                     <li class="links">
                         <a href="https://www.linkedin.com/in/christina-cruder-04a16534">
                             <img class="social-icon lazy" data-src="media/linkedin grey.png" alt="linkedIn Logo">
                             <img class="social-icon social-hover simple-hide no-fade lazy" data-src="media/linkedin.png" alt="linkedIn Logo">
                         </a>
-                        <a href="https://github.com/ckatr13"><img class="social-icon lazy" data-src="media/github.png" alt="Github Logo"></a>
+                        <a href="https://github.com/ckatr13">
+                            <img class="social-icon lazy" data-src="media/github.png" alt="Github Logo">
+                            <img class="social-icon social-hover simple-hide no-fade lazy" data-src="media/github-blue.png" alt="Github Logo">
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -123,6 +158,9 @@
                     }
                 });
             });
+
+            window.addEventListener("load", animateIn);
+            window.addEventListener("resize", animateIn);
         </script>
         <noscript>You need to enable JavaScript to run this app.</noscript>
     </body>
