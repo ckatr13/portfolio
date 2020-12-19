@@ -796,7 +796,7 @@ input, textarea {
 .submit {
     background-color: #3680A7;
     padding: 12px 20px;
-    color: #EFEFEF;
+    color: white;
     border: none;
     transition: background-color 500ms ease-in-out;
 }   
