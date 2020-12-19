@@ -168,6 +168,12 @@ nav {
     opacity: 1;
 }
 
+@media screen and (min-width: 850px) {
+    .logo-img {
+        width: 108px;
+    }
+}
+
 .logo-img:hover, .logo-img:focus {
     opacity: 1 !important;
 }
@@ -703,7 +709,7 @@ footer {
 .contact {
     width: calc(100% - 40px);
     padding: 40px 20px;
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 @media screen and (min-width: 850px) {
@@ -714,6 +720,12 @@ footer {
         width: 80%;
         padding: 0px;
         margin-top: 60px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    form {
+        width: 50%;
     }
 }
 
@@ -750,19 +762,13 @@ input, textarea {
     background-color: #C67835;
 }
 
-.LI-profile-badge {
-    display: grid;
-    justify-items: center;
-    padding: 40px 20px;
-}
-
 .contact-footer {
     height: 80px;
 }
 
 @media screen and (min-width: 850px) {
     .contact-footer {
-        margin-top: 0px;
+        margin-top: -40px;
     }
 }
 
@@ -778,4 +784,36 @@ input, textarea {
     .contact-element {
         display: block;
     }
+}
+
+.contact-info {
+    background-color: #EFEFEF;
+    padding-top: 20px;
+}
+
+@media screen and (min-width: 850px) {
+    .contact-info {
+        width: 50%;
+    }
+}
+
+.contact-me {
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.social-icon-contact {
+    width: 30px;
+    margin-top: 4px;
+    display: inline;
+}
+
+.social-hover-contact {
+    margin-left: -34px;
+    transition: opacity 500ms ease-in-out;
+}
+
+.social-hover-contact:hover {
+    opacity: 1 !important;
 }
