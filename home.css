@@ -655,7 +655,7 @@ nav {
 @media screen and (min-width: 850px) {
     .skills-list {
         margin-top: 70px;
-        width: 60%;
+        width: calc(60% - 40px);
         margin-left: 40%;
     }
 }
