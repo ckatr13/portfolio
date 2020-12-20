@@ -36,6 +36,7 @@ h2 {
 h3 {
     font-size: 24px;
     font-family: 'Arial Black', 'Arial', 'sans-serif';
+    color: #EFEFEF;
 }
 
 @media screen and (min-width: 850px) {
@@ -73,7 +74,7 @@ a {
 }
 
 a:hover, a:focus, .hamburger-menu:hover, .hamburger-menu:focus {
-    color: #C67835;
+    color: #C67835 !important;
 }
 
 a:visited {
@@ -143,6 +144,19 @@ g {
 
 li {
     line-height: 2em;
+}
+
+.big-title {
+    margin-left: -24px;
+    margin-top: 84px;
+    color: rgb(20, 20, 20);
+}
+
+@media screen and (min-width: 850px) {
+    .big-title {
+        font-size: 48px;
+        margin-top: 57px;
+    }
 }
 
 /* Navigation Styles */
@@ -389,21 +403,26 @@ nav {
     height: max-content;
     width: calc(100% - 40px);
     padding: 20px;
+    background-color: #EFEFEF;
+    margin-top: 40px;
 }
 
 @media screen and (min-width: 950px) {
     .portfolio {
         display: grid;
-        grid-template-columns: 80% 20%;
+        grid-template-columns: 90% 10%;
         grid-template-rows: 100%;
+        margin-top: 70px;
+        background-color: unset;
     }
 }
 
 .projects {
-    width: calc(100% - 20px);
+    width: calc(100% - 40px);
     display: grid;
     justify-content: center;
     grid-area: 1/1/1/1;
+    margin-left: 20px;
 }
 
 @media screen and (min-width: 950px) {
@@ -421,13 +440,17 @@ nav {
     height: 30px;
     float: right;
     margin-right: -20px;
+    margin-top: 40px;
 }
 
 @media screen and (min-width: 950px) {
     .proj-title-box {
-        width: 43%;
+        width: 80%;
         margin-top: 0px;
         margin-right: 0px;
+        position: absolute;
+        z-index: 3;
+        right: 0px;
     }
 }
 
@@ -436,7 +459,7 @@ nav {
     height: 100%;
     z-index: -1;
     display: none;
-    grid-area: 1/1/1/1;
+    grid-area: 1/1/1/3;
     margin-top: -40px;
 }
 
@@ -484,12 +507,13 @@ nav {
 @media screen and (min-width: 440px) {
     .project-img {
         min-width: 400px;
+        max-width: unset;
     }
 }
 
 @media screen and (min-width: 950px) {
     .project-img {
-        grid-column: 2/2;
+        grid-area: 1/2/1/2;
         max-width: unset;
         min-width: unset;
         width: calc(100% - 80px)
@@ -507,7 +531,7 @@ nav {
 
     .project {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 45% 55%;
         z-index: 2;
         grid-template-rows: 100%;
         width: 100%;
@@ -519,6 +543,7 @@ nav {
 .proj-info, .project-info2 {
     margin-top: 6px;
     max-width: 360px;
+    padding-left: 0px;
 }
 
 @media screen and (min-width: 440px) {
@@ -551,7 +576,8 @@ nav {
 /* Home Page Skills Styles */
 
 .skills {
-    margin-top: 30px;
+    margin-top: 0px;
+    overflow: hidden;
 }
 
 .skills-header {
@@ -569,7 +595,7 @@ nav {
 .skills-title-box {
     width: calc(25% - 40px);
     height: 10px;
-    margin-top: 120px;
+    margin-top: 150px;
 }
 
 @media screen and (min-width: 850px) {
@@ -594,21 +620,9 @@ nav {
     }
 }
 
-.bar {
-    width: 100%;
-    height: 10px;
-    margin-top: -1px;
-}
-
-@media screen and (min-width: 850px) {
-    .bar {
-        display: none;
-    }
-}
-
 .skills-title {
     margin-left: calc(25% - 2px);
-    margin-top: -76px;
+    margin-top: -26px;
 }
 
 @media screen and (min-width: 850px) {
@@ -620,8 +634,9 @@ nav {
 }
 
 .skills-white-box {
-    width: 25%;
-    margin-top: -11px;
+    width: 50%;
+    margin-top: 60px;
+    height: 30px;
     display: none;
 }
 
@@ -635,7 +650,7 @@ nav {
     float: right;
     height: 30px;
     width: 45%;
-    margin-top: -40px;
+    margin-top: -70px;
     display: none;
 }
 
@@ -652,7 +667,7 @@ nav {
 
 @media screen and (min-width: 850px) {
     .skills-list {
-        margin-top: 70px;
+        margin-top: 0px;
         width: calc(60% - 40px);
         margin-left: 40%;
     }
@@ -661,6 +676,13 @@ nav {
 .skills-li-2 {
     margin-top: 16px;
 }
+
+@media screen and (min-width: 850px) {
+    .li {
+        width: max-content;
+    }
+}
+
 
 /* Footer Styles */
 
@@ -727,18 +749,6 @@ footer {
 @media screen and (min-width: 850px) {
     .contact-header {
         width: 80%;
-    }
-}
-
-.contact-title {
-    margin-left: -22px;
-    margin-top: 84px;
-}
-
-@media screen and (min-width: 850px) {
-    .contact-title {
-        font-size: 48px;
-        margin-top: 57px;
     }
 }
 
@@ -863,3 +873,7 @@ input, textarea {
     margin-left: -37px;
     transition: opacity 500ms ease-in-out;
 }
+
+
+/* Project Page Styles */
+
