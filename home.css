@@ -2,8 +2,6 @@
 
 html {
     box-sizing: border-box;
-    max-width: 100%;
-    overflow-x: hidden;
 }
 
 body {
@@ -389,7 +387,7 @@ nav {
 
 .portfolio {
     height: max-content;
-    width: calc(100% - 20px);
+    width: calc(100% - 40px);
     padding: 20px;
 }
 
@@ -461,7 +459,7 @@ nav {
     height: calc(100% + 60px);
     margin-top: -20px;
     z-index: -1;
-    width: 100%;
+    width: calc(100% + 20px);
     padding: 0px;
 }
 
