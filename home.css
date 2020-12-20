@@ -436,10 +436,9 @@ nav {
 }
 
 .proj-title-box {
-    width: 50%;
+    width: calc(50% - 40px);
     height: 30px;
     float: right;
-    margin-right: -20px;
     margin-top: 40px;
 }
 
@@ -447,7 +446,6 @@ nav {
     .proj-title-box {
         width: 80%;
         margin-top: 0px;
-        margin-right: 0px;
         position: absolute;
         z-index: 3;
         right: 0px;
@@ -662,7 +660,12 @@ nav {
 
 #skills {
     transition: opacity 750ms ease-in-out;
-    display: flex;
+}
+
+@media screen and (min-width: 850px) {
+    #skills {
+        display: flex;
+    }
 }
 
 @media screen and (min-width: 850px) {
@@ -674,7 +677,13 @@ nav {
 }
 
 .skills-li-2 {
-    margin-top: 16px;
+    margin-top: -16px;
+}
+
+@media screen and (min-width: 850px) {
+    .skills-li-2 {
+        margin-top: 16px;
+    }
 }
 
 @media screen and (min-width: 850px) {
