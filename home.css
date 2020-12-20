@@ -886,3 +886,64 @@ input, textarea {
 
 /* Project Page Styles */
 
+.proj-top-img {
+    margin-top: 40px;
+    width: 100%;
+    opacity: 1;
+}
+
+.proj-blue-box {
+    width: calc(20% - 40px);
+    height: 60px;
+}
+
+.proj-page-title {
+    margin-top: -26px;
+    margin-left: calc(20% - 2px);
+}
+
+@media screen and (min-width: 850px) {
+    .proj-page-title {
+        margin-top: -34px;
+    }
+}
+
+.proj-section {
+    margin-top: -31px;
+}
+
+@media screen and (min-width: 850px) {
+    .proj-section {
+        margin-top: -40px;
+    }
+} 
+
+@media screen and (min-width: 950px) {
+    .proj-section {
+        display: flex;
+    }
+} 
+
+.proj-section-top {
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 950px) {
+    .proj-section-side {
+        padding: 40px;
+    }
+
+    .proj-section-top {
+        padding: 0px 40px;
+    }
+} 
+
+.proj-computer-img {
+    width: 100%;
+}
+
+.computer-container {
+    height: 300px;
+    overflow: hidden;
+}
+
