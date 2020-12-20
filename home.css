@@ -457,7 +457,7 @@ nav {
 }
 
 .blue-proj-box {
-    height: calc(100% + 60px);
+    height: calc(100% + 40px);
     margin-top: -20px;
     z-index: -1;
     width: 100%;
