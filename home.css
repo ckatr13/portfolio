@@ -209,12 +209,6 @@ nav {
     transition: all 500ms ease-in-out;
 }
 
-/* @media screen and (min-width: 400px) {
-    .nav-menu {
-        width: 50%;
-    }
-} */
-
 @media screen and (min-width: 600px) {
     .nav-menu {
         width: 25%;
