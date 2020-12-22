@@ -586,7 +586,7 @@ nav {
 /* Home Page Skills Styles */
 
 .skills {
-    margin-top: 0px;
+    margin-top: 60px;
     overflow: hidden;
 }
 
@@ -645,7 +645,6 @@ nav {
 
 .skills-white-box {
     width: 50%;
-    margin-top: 60px;
     height: 30px;
     display: none;
 }
@@ -670,12 +669,12 @@ nav {
     }
 }
 
-#skills {
+#skills-li {
     transition: opacity 750ms ease-in-out;
 }
 
 @media screen and (min-width: 850px) {
-    #skills {
+    #skills-li {
         display: flex;
     }
 }
