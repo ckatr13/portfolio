@@ -959,3 +959,27 @@ input, textarea {
     overflow: hidden;
 }
 
+/* About Page Styles */
+
+.about {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 60px;
+    padding-right: 0px;
+    padding-bottom: 40px;
+}
+
+.about-img {
+    width: calc(30% - 20px);
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.about-info {
+    width: 70%;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #EFEFEF;
+    padding-bottom: 20px;
+}
